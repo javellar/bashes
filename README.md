@@ -1,5 +1,5 @@
 # bashes
 all me bashes
 do stuff
-break things
+let's break things!
 BASH it!
