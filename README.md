@@ -1,2 +1,5 @@
 # bashes
-all my bash
+all me bashes
+do stuff
+let's break things!
+BASH it!
