@@ -4,9 +4,8 @@
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
-#User specific aliases and functions
 
-#Change umash to make directory sharing easier
+#Change umask to make directory sharing easier
 umask 0002
 
 #ignore duplicates in command history and increase 
@@ -15,15 +14,27 @@ export HISTCONTROL=ignoredups:ignorespace
 export HISTSIZE=1000
 
 #custom shell prompt
-#PS1="\[\033[1;34m\]<\u@\h \W>$\[\033[0;m "
-PS1="\[\033[0;33m\]\u@\h:\[\033[0;36m\]\w\[\033[00m\]\$ "
-
-export PS1
+export PS1="\[\033[0;33m\]\u@\h:\[\033[0;36m\]\w\[\033[00m\]\$ "
 
 #helpful aliases
-alias l.="ls -d .* --color=auto" 
-alias ll="ls -l .* --color=auto"
+alias l.="ls -d .*" 
+alias ll="ls -l .*"
 alias la='ls -A'
 alias l='ls -CF'
-alias sp='ls /bin /usr/bin |sort|uniq|grep'
-
+alias lt='ls -At1 && echo "----Oldest----"'
+alias ltr='ls -Art1 && echo "----Newest----"'
+alias sp='ls /bin /usr/bin|sort|uniq|grep -i'
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias ~='cd ~/'
+alias vdif='vimdiff'
+alias rc='vim ~/.bashrc'
+alias bp='vim ~/.bash_profile'
+alias vc='vim ~/.vimrc'
+alias s_rc='source ~/.bashrc'
+alias s_bp='source ~/.bash_profile'
+alias c='clear'
+alias cp='cp -i'
+alias mv='mv -i'
+alias hs='history|grep -i'
