@@ -1,7 +1,7 @@
 #.bash_profile
 #PATH=$PATH:$HOME/bin
 
-# Geth the aliases and functions of .bashrc if it exists
+# Get the aliases and functions of .bashrc if it exists
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
