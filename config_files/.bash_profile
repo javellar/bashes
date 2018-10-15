@@ -1,7 +1,7 @@
 #.bash_profile
 #PATH=$PATH:$HOME/bin
 
-# Get the aliases and functions of .bashrc if it exists
+# Geth the aliases and functions of .bashrc if it exists
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
@@ -14,3 +14,8 @@ export CLICOLOR
 export LSCOLORS
 
 gam() { "/Users/javellar/bin/gam/gam" "$@" ; }
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
