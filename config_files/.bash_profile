@@ -5,7 +5,7 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-PATH=$PATH:$HOME/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/sbin:
+PATH=$PATH:$HOME/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.7/bin:
 LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 CLICOLOR=1
 export PATH
