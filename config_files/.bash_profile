@@ -5,7 +5,7 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-PATH=$PATH:$HOME/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.7/bin:
+PATH=$PATH:$HOME/bin:
 LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 CLICOLOR=1
 export PATH
@@ -13,3 +13,7 @@ export CLICOLOR
 export LSCOLORS
 
 gam() { "/Users/javellar/bin/gam/gam" "$@" ; }
+#added when install python3 via brew
+export PATH="/usr/local/sbin:$PATH"
+#added when install psql via brew
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
