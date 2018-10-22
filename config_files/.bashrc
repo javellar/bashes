@@ -17,8 +17,8 @@ export HISTSIZE=1000
 export PS1="\[\033[0;33m\]\u@\h:\[\033[0;36m\]\w\[\033[00m\]\$ "
 
 #helpful aliases
-alias l.="ls -d .*" 
-alias ll="ls -l .*"
+alias l.="ls -ldh .*" 
+alias ll="ls -lh"
 alias la='ls -A'
 alias l='ls -CF'
 alias lt='ls -At1 && echo "----Oldest----"'
