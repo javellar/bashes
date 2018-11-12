@@ -17,3 +17,4 @@ gam() { "/Users/javellar/bin/gam/gam" "$@" ; }
 export PATH="/usr/local/sbin:$PATH"
 #added when install psql via brew
 export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"

@@ -14,7 +14,7 @@ export HISTCONTROL=ignoredups:ignorespace
 export HISTSIZE=1000
 
 #custom shell prompt
-export PS1="\[\033[0;33m\]\u@\h:\[\033[0;36m\]\w\[\033[00m\]\$ "
+export PS1="\[\033[0;33m\]\u@\h:\[\033[0;36m\]\w\[\033[00m\]\\$ "
 
 #helpful aliases
 alias l.="ls -ldh .*" 
